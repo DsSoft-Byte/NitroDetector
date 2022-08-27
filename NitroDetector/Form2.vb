@@ -1,4 +1,6 @@
-﻿Public Class Form2
+﻿Imports System.Windows
+
+Public Class Form2
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
@@ -29,5 +31,20 @@
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Form3.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("https://github.com/DsSoft-Byte/NitroDetector/blob/main/version.txt")
+        Dim response As System.Net.HttpWebResponse = request.GetResponse
+        Dim sr As IO.StreamReader = New System.IO.StreamReader(response.GetResponseStream)
+
+        Dim newestversions As String = sr.ReadToEnd
+        Dim currentversion As String = Application.ProductVersion
+
+        If newestversions.Contains(currentversion) Then
+            MsgBox("You are up to date!")
+        Else
+            Form4.Show()
+        End If
     End Sub
 End Class

@@ -37,6 +37,7 @@ Partial Class Form2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -202,12 +203,22 @@ Partial Class Form2
         Me.Button5.Text = "File Presence Check"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(176, 133)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(137, 23)
+        Me.Button6.TabIndex = 9
+        Me.Button6.Text = "Updater"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(611, 436)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button2)
@@ -244,4 +255,5 @@ Partial Class Form2
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class
