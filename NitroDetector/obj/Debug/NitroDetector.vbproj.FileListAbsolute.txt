@@ -28,3 +28,4 @@ C:\Users\Daniel\Documents\GitHub\NitroDetector\NitroDetector\obj\Debug\NitroDete
 C:\Users\Daniel\Documents\GitHub\NitroDetector\NitroDetector\obj\Debug\NitroDetector.exe
 C:\Users\Daniel\Documents\GitHub\NitroDetector\NitroDetector\obj\Debug\NitroDetector.xml
 C:\Users\Daniel\Documents\GitHub\NitroDetector\NitroDetector\obj\Debug\NitroDetector.pdb
+C:\Users\Daniel\Documents\GitHub\NitroDetector\NitroDetector\obj\Debug\NitroDetector.Form4.resources

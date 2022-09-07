@@ -7,8 +7,8 @@ Public Class Form4
             MsgBox("The Update file has been downloaded, or is obsolete but present. ERROR Code 01")
         Else
             My.Computer.Network.DownloadFile(
-        "https://raw.githubusercontent.com/DsSoft-Byte/iCu/main/iCures_Updater.zip",
-        "C:\Users\Public\Downloads\File\iCu.zip")
+        "https://raw.githubusercontent.com/DsSoft-Byte/NitroDetctor",
+        "C:\Users\Public\Downloads\File\NitroUpdate.zip")
             Module1.Main()
             Process.Start("C:\Users\Public\Downloads\Updater\NitroUpdate\Updater\Nitropdate.exe")
             Me.Close()
